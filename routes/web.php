@@ -15,7 +15,7 @@ use TCG\Voyager\Voyager;
 */
 
 Route::get('/', function () {
-    return inertia('Welcome');
+    return redirect('/heroes');
 });
 
 Route::get('/heroes', [\App\Http\Controllers\HeroController::class, 'index'])->name('heroes');
